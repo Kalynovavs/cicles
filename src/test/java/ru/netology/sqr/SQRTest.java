@@ -16,7 +16,7 @@ public class SQRTest {
             delimiter = ';'
     )
 
-    void shouldCalculateForRegisteredAndUnderLimit(String test, int from, int to, int expected) {
+    void shouldCalculate(String test, int from, int to, int expected) {
         SQRService service = new SQRService();
         long actual = service.getCountSQR(from, to);
         System.out.println(test);
